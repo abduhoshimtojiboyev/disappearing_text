@@ -1,0 +1,16 @@
+<Blur>:
+    canvas.before:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'blured.png'
+    Button:
+        id: animate
+        text: 'Here, you can add anything you want now. Click me!'
+        bold: True
+        italic: True
+        pos: 700, 500
+        font_size: 25
+        size: 400, 300
+        background_color: 0,0,0,0
+        on_press: root.anim()
